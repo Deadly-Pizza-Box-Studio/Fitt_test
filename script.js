@@ -13,15 +13,18 @@ function submit()
                 }
         }
         console.log(score)
-    const data = {Name:"score",Score: score}
+    const payload = {Name:"score",Score: score}
+    var data = new FormData()
+    data.append("json",JSON.stringify(payload))
     fetch("scores.json",
         {
-            method:"post",
+            method:"POST",
             headers:{'Content-Type': 'application/json'},
-            body: JSON.stringify(data)
+            body: data
+
         })
-    .then(json=>json.json())
-    .then(result=>console.log(result))
+    .then(function(res){ return res.json(); })
+    .then(function(data){ alert( JSON.stringify( data ) ) })
 }
 
 document.getElementById("submitbutton").addEventListener("click",()=>
