@@ -1,0 +1,36 @@
+body
+{
+    animation: rainbow 10s linear 0s infinite;
+}
+main
+{
+    background-color: rgba(255, 255, 255, 0.426);
+    width: 50%;
+    margin: auto;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rainbow
+{
+    0%{background-color: lightblue;}
+    10%{background-color: lightcyan}
+    25%{background-color: lightgreen}
+    30%{background-color: lightpink}
+    50%{background-color: lightsalmon}
+    60%{background-color: lightcoral}
+    75%{background-color: lightyellow}
+    85%{background-color: lightgray}
+    100%{background-color: lightblue}
+}
