@@ -5,7 +5,7 @@ function submit()
         {
             for(let j = 0;j < 3;i++)
                 {
-                    if(document.getElementById("q"+i+j).checked)
+                    if(document.getElementById("q"+i.toString()+j.toString()).checked)
                         {
                             score += document.getElementById("q"+i+j).value
                         }
