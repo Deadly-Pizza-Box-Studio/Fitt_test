@@ -9,6 +9,10 @@ main
     margin: auto;
     height: 500px;
 }
+.rainbowText
+{
+    animation: rainbowtext 5s linear 0s infinite;
+}
 
 
 
@@ -19,8 +23,18 @@ main
 
 
 
-
-
+@keyframes rainbowtext
+{
+    0%{color: blue;}
+    10%{color: violet}
+    25%{color: purple}
+    30%{color: darkcyan}
+    50%{color: red}
+    60%{color: darkgreen}
+    75%{color: darkorchid}
+    85%{color: darkturquoise}
+    100%{color: darkgoldenrod}
+}
 
 @keyframes rainbow
 {
