@@ -37,4 +37,5 @@ let lefting = setInterval(()=>{
             
             document.getElementsByTagName("label")[i].style.color = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`     
         }
+    
 },100)
