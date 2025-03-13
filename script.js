@@ -16,7 +16,7 @@ function submit()
     const payload = {Name:"score",Score: score}
     var data = new FormData()
     data.append("json",JSON.stringify(payload))
-    fetch("scores.json",
+    fetch("http://127.0.0.1:5500/scores.json",
         {
             method:"POST",
             headers:{'Content-Type': 'application/json'},
@@ -31,3 +31,10 @@ document.getElementById("submitbutton").addEventListener("click",()=>
     {
         submit();
     })
+let lefting = setInterval(()=>{
+    for(let i = 1;i < 52;i++)
+        {
+            
+            document.getElementsByTagName("label")[i].style.color = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`     
+        }
+},100)
