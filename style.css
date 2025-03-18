@@ -15,7 +15,7 @@ main
     animation: rainbowtext 5s linear 0s infinite;
 }
 .img{
-    background-image: url(healthy-food-clean-eating-selection-royalty-free-image-854725402-1541694348.avif);
+    background-image: url(./image.avif);
     width: 100%;
   height: 300px;
   object-fit: cover;
