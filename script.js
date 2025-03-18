@@ -2,7 +2,7 @@ let score = 0;
 function submit()
 {
     score = 0;
-    for(let i = 1;i < 12;i++)
+    for(let i = 1;i < 14;i++)
         {
             for(let j = 1;j < 4;j++)
                 {
