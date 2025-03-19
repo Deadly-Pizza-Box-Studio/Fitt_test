@@ -37,7 +37,7 @@ const server = http.createServer((req,res)=>
             }
         else if(url === "/scores.json" && req.method == "GET")
             {
-                res.writeHead(200, {"content-type":"text/json"})
+                res.writeHead(200, {"content-type":"application/json"})
                 res.end(readFileSync('scores.json'))
             }
         else if(url === "/scores.json" && req.method == "POST")
@@ -58,6 +58,11 @@ const server = http.createServer((req,res)=>
                 })
                 req.pipe(res)
             }
+        else
+        {
+            res.writeHead(404,{"content-type":"text/html"})
+            res.end("<h1>404 PAGE NOT FOUND</h1>");
+        }
         
 
     })
